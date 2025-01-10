@@ -1,0 +1,28 @@
+1. Crear proyecto con Vite:
+npm create vite@latest frontend --template react
+cd frontend
+npm install
+
+2. Instalar dependencias:
+npm install react-router-dom
+npm install axios
+npm i -D standard
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+
+3. Configurar tailwindcss en el archivo tailwind.config.js:
+module.exports = {
+    content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+}
+
+3.1 En ela rchivo src/index.css:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
